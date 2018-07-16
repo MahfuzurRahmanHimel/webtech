@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <script>
+            function nlink()
+        {
+            location.replace("SignUp.html");
+            
+        }
+    </script>
+    <body>
+        <form action="logUser.php" method="POST">
+            <fieldset style="width:400px;margin-left:450px;margin-top:200px;border-radius:5px" >
+                <legend><h2 style="color: darkcyan"><i>Login</i></h2></legend>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" placeholder="example@domain.com" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" name="login" value="Log In"></td>
+                    </tr>
+                    <tr>
+                        <td>Don't have an account?</td>
+                        <td><input type="button" name="register" value="Registration" onclick="nlink()"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
